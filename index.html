@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zhakshylyk Barylbekov - Your KDP Book publishing and advertising expert</title>
+  <meta name="description" content="Zhakshylyk Barylbekov helps authors design covers, format interiors, optimize listings, and manage Amazon Ads for Kindle and print." />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <meta property="og:title" content="Zhakshylyk Barylbekov" />
+  <meta property="og:description" content="Covers, formatting, A+ content, listing SEO, and Amazon Ads for KDP." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://.com/" />
+  <meta name="theme-color" content="#0f766e" />
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <style>
+    html, body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    .text-muted-foreground { color: rgb(100 116 139); }
+  </style>
+</head>
+<body class="bg-white text-slate-900">
+  <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur" id="top">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <a href="#top" class="flex items-center gap-2">
+        <div class="grid h-8 w-8 place-items-center rounded-xl bg-gradient-to-br from-teal-500 to-indigo-500 text-white font-bold">ZB</div>
+        <span class="text-sm font-semibold tracking-wide">Zhakshylyk Barylbekov</span>
+      </a>
+      <nav class="hidden items-center gap-8 text-sm md:flex">
+        <a href="#services" class="hover:text-teal-600">Services</a>
+        <a href="#portfolio" class="hover:text-teal-600">Portfolio</a>
+        <a href="#process" class="hover:text-teal-600">Process</a>
+        <a href="#pricing" class="hover:text-teal-600">Pricing</a>
+        <a href="#contact" class="hover:text-teal-600">Contact</a>
+        <a href="#contact" class="rounded-full bg-teal-600 px-4 py-2 font-medium text-white hover:bg-teal-700">Get a Quote</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-200 bg-white">
+      <div class="mx-auto max-w-6xl px-6 py-4 grid gap-4 text-sm">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="rounded-full bg-teal-600 px-4 py-2 font-medium text-white text-center">Get a Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <div class="absolute inset-0 bg-[radial-gradient(60%_60%_at_20%_10%,rgba(13,148,136,0.10),transparent_60%),radial-gradient(60%_60%_at_80%_90%,rgba(79,70,229,0.10),transparent_60%)]"></div>
+      <div class="absolute -top-32 -left-32 h-80 w-80 rounded-full bg-teal-200/30 blur-3xl"></div>
+      <div class="absolute -bottom-32 -right-32 h-80 w-80 rounded-full bg-indigo-200/30 blur-3xl"></div>
+    </div>
+    <div class="mx-auto max-w-6xl px-6 py-24">
+      <span class="inline-flex items-center rounded-full border border-black/30 bg-black/10 px-3 py-1 text-xs font-medium text-black backdrop-blur-sm bg-teal-600">Over 100+ titles published</span>
+      <h1 class="mt-6 text-4xl font-semibold leading-tight tracking-tight md:text-6xl">
+        Publish. Rank. <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-indigo-600">Sell More.</span>
+      </h1>
+      <p class="mt-4 max-w-2xl text-lg text-slate-600">
+        Zhakshylyk Barylbekov helps authors and publishers design, optimize, and scale books on Amazon—
+        from covers and formatting to SEO listings and ads.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#contact" class="rounded-2xl bg-teal-600 px-6 py-3 text-white font-medium hover:bg-teal-700">Get a Free Quote</a>
+        <a href="#portfolio" class="rounded-2xl border border-slate-300 px-6 py-3 font-medium hover:border-slate-400">See Portfolio</a>
+      </div>
+      <div class="mt-10 flex flex-wrap gap-3">
+        <div class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4"><path d="M20 6L9 17l-5-5"/></svg>Kindle &amp; Paperback</div>
+        <div class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4"><path d="M20 6L9 17l-5-5"/></svg>Fast turnarounds</div>
+        <div class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4"><path d="M20 6L9 17l-5-5"/></svg>Amazon-compliant</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-20">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">Services built for KDP growth</h2>
+      <p class="mt-3 max-w-2xl text-slate-500">Everything you need to launch, optimize, and scale your catalog.</p>
+      <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- 6 cards -->
+        <div class="group h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+      <div class="flex items-center gap-3 text-teal-700">
+        <div class="grid h-10 w-10 place-items-center rounded-xl bg-teal-50 text-teal-700">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4v15.5A2.5 2.5 0 0 0 6.5 22H20V6a2 2 0 0 0-2-2H6.5A2.5 2.5 0 0 0 4 6.5z"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold">KDP Formatting</h3>
+      </div>
+      <p class="mt-3 text-slate-600">Clean, print-ready interiors for Kindle & paperback (TOC, styles, margins).</p>
+      <ul class="mt-4 space-y-2 text-sm text-slate-600"><li class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>DOCX/EPUB/PDF delivery</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Fiction & Nonfiction</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Series templates</li></ul>
+    </div>
+<div class="group h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+      <div class="flex items-center gap-3 text-teal-700">
+        <div class="grid h-10 w-10 place-items-center rounded-xl bg-teal-50 text-teal-700">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4v15.5A2.5 2.5 0 0 0 6.5 22H20V6a2 2 0 0 0-2-2H6.5A2.5 2.5 0 0 0 4 6.5z"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold">Cover Design</h3>
+      </div>
+      <p class="mt-3 text-slate-600">Sale-stopping covers aligned to your niche with Amazon-compliant specs.</p>
+      <ul class="mt-4 space-y-2 text-sm text-slate-600"><li class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Thumbnail-first design</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>A/B-ready variants</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Brand palettes</li></ul>
+    </div>
+<div class="group h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+      <div class="flex items-center gap-3 text-teal-700">
+        <div class="grid h-10 w-10 place-items-center rounded-xl bg-teal-50 text-teal-700">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4v15.5A2.5 2.5 0 0 0 6.5 22H20V6a2 2 0 0 0-2-2H6.5A2.5 2.5 0 0 0 4 6.5z"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold">Listing Optimization</h3>
+      </div>
+      <p class="mt-3 text-slate-600">SEO titles, subtitles, and descriptions engineered to rank & convert.</p>
+      <ul class="mt-4 space-y-2 text-sm text-slate-600"><li class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Keyword research</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>7 back-end keywords</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Category strategy</li></ul>
+    </div>
+<div class="group h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+      <div class="flex items-center gap-3 text-teal-700">
+        <div class="grid h-10 w-10 place-items-center rounded-xl bg-teal-50 text-teal-700">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4v15.5A2.5 2.5 0 0 0 6.5 22H20V6a2 2 0 0 0-2-2H6.5A2.5 2.5 0 0 0 4 6.5z"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold">Amazon Ads Management</h3>
+      </div>
+      <p class="mt-3 text-slate-600">Dialed-in Auto/Phrase/Exact with negatives & daily optimizations.</p>
+      <ul class="mt-4 space-y-2 text-sm text-slate-600"><li class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>SP/SD campaigns</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Search term pruning</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>ROAS tracking</li></ul>
+    </div>
+<div class="group h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+      <div class="flex items-center gap-3 text-teal-700">
+        <div class="grid h-10 w-10 place-items-center rounded-xl bg-teal-50 text-teal-700">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4v15.5A2.5 2.5 0 0 0 6.5 22H20V6a2 2 0 0 0-2-2H6.5A2.5 2.5 0 0 0 4 6.5z"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold">A+ Content & Brand</h3>
+      </div>
+      <p class="mt-3 text-slate-600">On-brand A+ modules that legitimize your catalog and boost conversion.</p>
+      <ul class="mt-4 space-y-2 text-sm text-slate-600"><li class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Clean templates</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Series story</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Cross-sell tiles</li></ul>
+    </div>
+<div class="group h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+      <div class="flex items-center gap-3 text-teal-700">
+        <div class="grid h-10 w-10 place-items-center rounded-xl bg-teal-50 text-teal-700">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4v15.5A2.5 2.5 0 0 0 6.5 22H20V6a2 2 0 0 0-2-2H6.5A2.5 2.5 0 0 0 4 6.5z"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold">Publishing Ops</h3>
+      </div>
+      <p class="mt-3 text-slate-600">End-to-end support: metadata, categories, launches, and iteration cycles.</p>
+      <ul class="mt-4 space-y-2 text-sm text-slate-600"><li class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Checklists</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>QC & compliance</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Lifecycle updates</li></ul>
+    </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="process" class="py-20">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">A simple, transparent process</h2>
+      <p class="mt-3 max-w-2xl text-slate-500">Built to keep you shipping fast without sacrificing quality.</p>
+      <ol class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <li class="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <div class="absolute -top-3 left-6 grid h-8 w-8 place-items-center rounded-full bg-indigo-600 text-white text-sm font-semibold">1</div>
+      <h3 class="mt-4 text-base font-semibold">Discovery & Quote</h3>
+      <p class="mt-2 text-sm text-slate-600">Share goals, niche, comps, and files. We scope deliverables & timeline.</p>
+    </li>
+<li class="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <div class="absolute -top-3 left-6 grid h-8 w-8 place-items-center rounded-full bg-indigo-600 text-white text-sm font-semibold">2</div>
+      <h3 class="mt-4 text-base font-semibold">Design & Drafts</h3>
+      <p class="mt-2 text-sm text-slate-600">We explore 2–3 creative directions and refine with tight feedback loops.</p>
+    </li>
+<li class="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <div class="absolute -top-3 left-6 grid h-8 w-8 place-items-center rounded-full bg-indigo-600 text-white text-sm font-semibold">3</div>
+      <h3 class="mt-4 text-base font-semibold">QA & Compliance</h3>
+      <p class="mt-2 text-sm text-slate-600">Final checks for KDP specs, accessibility, and listing best practices.</p>
+    </li>
+<li class="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <div class="absolute -top-3 left-6 grid h-8 w-8 place-items-center rounded-full bg-indigo-600 text-white text-sm font-semibold">4</div>
+      <h3 class="mt-4 text-base font-semibold">Launch & Optimize</h3>
+      <p class="mt-2 text-sm text-slate-600">Go live with a checklist, early ads, and data-driven follow-ups.</p>
+    </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="pricing" class="py-20">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">Straightforward pricing</h2>
+      <p class="mt-3 max-w-2xl text-slate-500">Custom bundles available for series and catalogs.</p>
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <div class="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      
+      <h3 class="text-lg font-semibold">Beginner</h3>
+      <div class="mt-2 text-3xl font-bold">$199+</div>
+      <ul class="mt-4 space-y-2 text-sm text-slate-700"><li class="flex items-center gap-2"><svg class="h-4 w-4 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>KDP interior formatting (≤30k words)</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Basic cover (eBook)</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Keyword set + 2 categories</li></ul>
+      <a href="#contact" class="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-4 py-2 font-medium text-white hover:bg-slate-800">Get Started</a>
+    </div>
+<div class="relative rounded-2xl border border-indigo-600 ring-2 ring-indigo-100 bg-white p-6 shadow-sm">
+      <div class="absolute -top-3 left-6 rounded-full bg-indigo-600 px-3 py-1 text-xs font-semibold text-white">Most popular</div>
+      <h3 class="text-lg font-semibold">Advanced</h3>
+      <div class="mt-2 text-3xl font-bold">$499+</div>
+      <ul class="mt-4 space-y-2 text-sm text-slate-700"><li class="flex items-center gap-2"><svg class="h-4 w-4 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>eBook + print cover</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>SEO listing rewrite</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>A+ content (1 layout)</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Launch checklist</li></ul>
+      <a href="#contact" class="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-4 py-2 font-medium text-white hover:bg-slate-800">Get Started</a>
+    </div>
+<div class="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      
+      <h3 class="text-lg font-semibold">Professional</h3>
+      <div class="mt-2 text-3xl font-bold">$999+</div>
+      <ul class="mt-4 space-y-2 text-sm text-slate-700"><li class="flex items-center gap-2"><svg class="h-4 w-4 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Everything in Growth</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Amazon Ads setup + 30‑day tuning</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Series branding kit</li><li class="flex items-center gap-2"><svg class="h-4 w-4 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Quarterly optimization plan</li></ul>
+      <a href="#contact" class="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-4 py-2 font-medium text-white hover:bg-slate-800">Get Started</a>
+    </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-20">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">FAQ</h2>
+      <p class="mt-3 max-w-2xl text-slate-500">Quick answers to common questions.</p>
+      <div class="mt-10 divide-y divide-slate-200 rounded-2xl border border-slate-200 bg-white">
+        <details class="group p-6">
+      <summary class="cursor-pointer list-none text-base font-semibold leading-7">
+        <span class="mr-3 inline-block h-5 w-5 -translate-y-0.5 rotate-0 transition group-open:rotate-45">+</span>
+        How fast can you deliver?
+      </summary>
+      <p class="mt-3 text-slate-600">Typical single-title turnarounds are 3–7 business days depending on scope and feedback speed. Rush options available.</p>
+    </details>
+<details class="group p-6">
+      <summary class="cursor-pointer list-none text-base font-semibold leading-7">
+        <span class="mr-3 inline-block h-5 w-5 -translate-y-0.5 rotate-0 transition group-open:rotate-45">+</span>
+        Do you offer revisions?
+      </summary>
+      <p class="mt-3 text-slate-600">Yes. Each package includes at least two revision rounds. We keep loops tight to ship quickly.</p>
+    </details>
+<details class="group p-6">
+      <summary class="cursor-pointer list-none text-base font-semibold leading-7">
+        <span class="mr-3 inline-block h-5 w-5 -translate-y-0.5 rotate-0 transition group-open:rotate-45">+</span>
+        Can you manage my ads ongoing?
+      </summary>
+      <p class="mt-3 text-slate-600">We can set up and tune ads for 30 days (Pro), or create a monthly plan for continued optimization.</p>
+    </details>
+<details class="group p-6">
+      <summary class="cursor-pointer list-none text-base font-semibold leading-7">
+        <span class="mr-3 inline-block h-5 w-5 -translate-y-0.5 rotate-0 transition group-open:rotate-45">+</span>
+        What files do I receive?
+      </summary>
+      <p class="mt-3 text-slate-600">Final interiors (DOCX/EPUB/PDF as applicable), print/eBook covers, and a metadata doc with keywords and categories.</p>
+    </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">Let's build your next bestseller</h2>
+      <p class="mt-3 max-w-2xl text-slate-500">Tell us about your book and goals. We'll reply with a tailored quote.</p>
+      <div class="mt-10 grid gap-8 lg:grid-cols-2">
+        <form id="contact-form" class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="grid gap-4">
+            <input type="text" name="website" class="hidden" tabindex="-1" autocomplete="off" />
+            <div>
+              <label class="text-sm font-medium">Name</label>
+              <input name="from_name" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-teal-500" placeholder="Your name" />
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label class="text-sm font-medium">Email</label>
+                <input name="reply_to" type="email" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-teal-500" placeholder="you@domain.com" />
+              </div>
+              <div>
+                <label class="text-sm font-medium">Book Genre</label>
+                <input name="book_genre" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-teal-500" placeholder="e.g., self-help, romance, textbook" />
+              </div>
+            </div>
+            <div>
+              <label class="text-sm font-medium">What do you need?</label>
+              <select name="service_needed" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-teal-500">
+                <option>Cover Design</option>
+                <option>KDP Formatting</option>
+                <option>Listing Optimization</option>
+                <option>Amazon Ads Setup/Management</option>
+                <option>A+ Content</option>
+                <option>Other / Bundle</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-sm font-medium">Message</label>
+              <textarea name="message" rows="5" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-teal-500" placeholder="Tell us about your title(s), word count, deadline, links to comps, etc."></textarea>
+            </div>
+<!-- Replace with your Site key from Google reCAPTCHA -->
+<div class="g-recaptcha" data-sitekey="6Lf9ftQrAAAAAEg9lfKi4oyJ5Kx-HETpB7d5NM2B" data-theme="light"></div>
+            <button type="submit" class="rounded-xl bg-teal-600 px-5 py-3 font-medium text-white hover:bg-teal-700">Request Quote</button>
+            <p id="status" class="text-sm"></p>
+            <p class="text-xs text-slate-500">Prefer email? Write to <a class="underline" href="mailto:quote@zb.com">quote@zb.com</a></p>
+          </div>
+        </form>
+
+        <div class="rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-6">
+          <h3 class="text-lg font-semibold">Why Zhakshylyk Barylbekov?</h3>
+          <ul class="mt-4 space-y-3 text-slate-700">
+            <li class="flex gap-3"><svg class="mt-0.5 h-5 w-5 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 100+ published titles across self‑help, education, lifestyle, and more</li>
+            <li class="flex gap-3"><svg class="mt-0.5 h-5 w-5 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Thumbnail‑first cover strategy that converts browsers to buyers</li>
+            <li class="flex gap-3"><svg class="mt-0.5 h-5 w-5 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Search‑driven metadata and clean A+ modules that boost trust</li>
+            <li class="flex gap-3"><svg class="mt-0.5 h-5 w-5 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Fast, friendly, iterative collaboration aimed at results</li>
+          </ul>
+          <div class="mt-8 grid gap-3 sm:grid-cols-2">
+            <div class="rounded-xl border border-slate-200 bg-white p-4">
+              <div class="text-3xl font-bold">4.8/5</div>
+              <div class="text-sm text-slate-600">avg client rating</div>
+            </div>
+            <div class="rounded-xl border border-slate-200 bg-white p-4">
+              <div class="text-3xl font-bold">24–72h</div>
+              <div class="text-sm text-slate-600">typical draft turnaround</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-slate-200">
+    <div class="mx-auto max-w-6xl px-6 py-10 text-sm text-slate-600">
+      <div class="flex flex-col justify-between gap-6 md:flex-row md:items-center">
+        <div class="flex items-center gap-2">
+          <div class="grid h-8 w-8 place-items-center rounded-xl bg-gradient-to-br from-teal-500 to-indigo-500 text-white font-bold">ZB</div>
+          <span>© <span id="year"></span> Zhakshylyk Barylbekov. All rights reserved.</span>
+        </div>
+        <div class="flex flex-wrap gap-4">
+          <a class="hover:text-teal-700" href="#services">Services</a>
+          <a class="hover:text-teal-700" href="#portfolio">Portfolio</a>
+          <a class="hover:text-teal-700" href="#pricing">Pricing</a>
+          <a class="hover:text-teal-700" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // EmailJS config: replace with your real values
+    const EMAILJS_PUBLIC_KEY = "YvcVSSb2ekQfhd2d_";
+    const EMAILJS_SERVICE_ID = "service_rw4jgl8";
+    const EMAILJS_TEMPLATE_ID = "template_wt5t48s";
+
+    if (typeof emailjs !== 'undefined' && EMAILJS_PUBLIC_KEY !== "YOUR_PUBLIC_KEY") {
+      emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+    }
+
+    // Form submit
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('status');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.textContent = "";
+      status.removeAttribute('style');
+
+if (typeof grecaptcha !== 'undefined' && grecaptcha.getResponse().length === 0) {
+  status.textContent = "Please verify you're human.";
+  status.style.color = "#dc2626";
+  return;
+}
+
+      // Honeypot
+      if (form.website && form.website.value) return;
+
+      if (EMAILJS_PUBLIC_KEY === "YOUR_PUBLIC_KEY") {
+        status.textContent = "EmailJS is not configured. Add your Public Key, Service ID, and Template ID in index.html.";
+        status.style.color = "#dc2626";
+        return;
+      }
+
+      try {
+        const btn = form.querySelector('button[type="submit"]');
+        btn.disabled = true; btn.textContent = "Sending…";
+        await emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form);
+        status.textContent = "Thanks! Your message has been sent.";
+        status.style.color = "#16a34a";
+        form.reset();
+      } catch (err) {
+        console.error(err);
+        status.textContent = "Failed to send. Please try again.";
+        status.style.color = "#dc2626";
+      } finally {
+        const btn = form.querySelector('button[type="submit"]');
+        btn.disabled = false; btn.textContent = "Request Quote";
+      }
+    });
+  </script>
+</body>
+</html>
